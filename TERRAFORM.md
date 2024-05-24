@@ -2,6 +2,10 @@
 
 This document provides a list of common Terraform commands along with brief descriptions.
 
+Terraform is an infrastructure as code tool that lets you build, change, and version infrastructure safely and efficiently. This includes low-level components like compute instances, storage, and networking, as well as high-level components like DNS entries and SaaS features.
+
+The command line interface to Terraform is the [terraform command](https://developer.hashicorp.com/terraform/cli/commands), which accepts a variety of subcommands such as terraform init or terraform plan
+
 ## Initialization
 
 | Command                      | Description                                               |

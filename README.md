@@ -61,6 +61,7 @@ This document provides a list of common Linux commands along with brief descript
 | `ifconfig`| Configure a network interface (deprecated, use `ip`). |
 | `ip`     | Show/manipulate routing, devices, policy routing, and tunnels. |
 | `netstat`| Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships. |
+| `ss`     | Another utility to investigate sockets.           |
 | `scp`    | Secure copy (remote file copy program).           |
 | `ssh`    | OpenSSH SSH client (remote login program).        |
 | `wget`   | The non-interactive network downloader.           |
@@ -118,6 +119,16 @@ This document provides a list of common Linux commands along with brief descript
 | `deluser`| Remove a user from the system.                   |
 | `userdel`| Delete a user account and related files.         |
 
+## Power On-Off Commands
+
+| Command   | Description                                     |
+|-----------|-------------------------------------------------|
+| `shutdown`| Bring the system down.                          |
+| `reboot`  | Reboot the system.                              |
+| `halt`    | Halt the system.                                |
+| `poweroff`| Power off the system.                           |
+| `crontab`| Schedule periodic background jobs.               |
+
 ## Miscellaneous
 
 | Command  | Description                                      |
@@ -129,6 +140,6 @@ This document provides a list of common Linux commands along with brief descript
 | `cal`    | Display a calendar.                              |
 | `alias`  | Define or display aliases.                       |
 | `history`| Display or manipulate the history list.          |
-| `shutdown`| Bring the system down.                          |
+
 
 

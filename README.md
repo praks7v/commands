@@ -1,5 +1,5 @@
 ## commands
 
 
-- Changes file permissions ``` chmod ```
+- ``` chmod ``` Changes file permissions 
 

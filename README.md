@@ -48,6 +48,10 @@ This document provides a list of common Linux commands along with brief descript
 | `hostname`| Show or set the system’s hostname.              |
 | `kill`    |	Terminates programs.                            |
 | `htop`    |	Displays processes and resources information.   |
+| `dmesg`   | Print or control the kernel ring buffer.        |
+| `journalctl` | Query and display messages from the journal. |
+| `systemctl`  | Inspect and control the systemd system and service manager. |
+| `service` | Run a System V init script.                     |
 
 ## Networking
 

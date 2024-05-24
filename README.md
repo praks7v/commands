@@ -118,8 +118,8 @@ This document provides a list of common Linux commands along with brief descript
 
 | Command  | Description                                      |
 |----------|--------------------------------------------------|
-| `man`    |	Displays manual page of other commands          |
-| `which`  |	Returns the full binary path of a program       |
+| `man`    |	Displays manual page of other commands.         |
+| `which`  |	Returns the full binary path of a program.      |
 | `echo`   | Display a line of text.                          |
 | `date`   | Display or set the system date and time.         |
 | `cal`    | Display a calendar.                              |

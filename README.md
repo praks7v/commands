@@ -1,5 +1,5 @@
 ## commands
 
-```
+```zsh
 chmod
 ```

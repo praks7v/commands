@@ -1,5 +1,7 @@
 ## commands
 
-```zsh
+- Changes file permissions
+```
 chmod
 ```
+

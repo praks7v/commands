@@ -2,6 +2,8 @@
 
 This document provides a list of common Minikube commands along with brief descriptions.
 
+minikube [command](https://minikube.sigs.k8s.io/docs/commands/) reference.
+
 ## Minikube Cluster Management
 
 | Command                      | Description                                               |

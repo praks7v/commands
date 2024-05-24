@@ -2,6 +2,9 @@
 
 This document provides a list of common Helm commands along with brief descriptions.
 
+Here you’ll find the list of CLI commands for [Helm](https://helm.sh/docs/helm/), with help info on their usage.
+
+Helm [cheatsheet](https://helm.sh/docs/intro/cheatsheet/) featuring all the necessary commands required to manage an application through Helm.
 ## Helm Basics
 
 | Command                      | Description                                               |

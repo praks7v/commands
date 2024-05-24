@@ -1,6 +1,8 @@
 # Common Linux Commands
 
 This document provides a list of common Linux commands along with brief descriptions.
+documentation of [linux commands](https://docs.rockylinux.org/books/admin_guide/03-commands/).
+second link for [linux commands](https://linuxcommand.org/lc3_man_page_index.php).
 
 ## File and Directory Management
 

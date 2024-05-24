@@ -2,6 +2,14 @@
 
 This document provides a list of common Kubernetes commands along with brief descriptions.
 
+Kubernetes provides a command line tool for communicating with a [Kubernetes](https://kubernetes.io/docs/reference/kubectl/) cluster's control plane, using the Kubernetes API.
+
+This page contains a list of commonly used [kubectl](https://kubernetes.io/docs/reference/kubectl/quick-reference/) commands and flags.
+
+kubectl controls the Kubernetes cluster manager.
+
+Find more information in [Command line tool](https://kubernetes.io/docs/reference/kubectl/kubectl/) (kubectl).
+
 ## Cluster Management
 
 | Command                     | Description                                               |

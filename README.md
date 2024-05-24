@@ -1,50 +1,3 @@
-## commands
-
-
-| Command | Usage |
-| --- | --- |
-| `ls` |Lists the content of a directory |
-| `alias` | Define or display aliases |
-| `unalias` |	Remove alias definitions |
-| `pwd` |	Prints the working directory |
-| `cd` | Changes directory |
-| `cp` | Copies files and directories |
-| `rm `	| Remove files and directories |
-| `mv` |	Moves (renames) files and directories |
-| `mkdir` |	Creates directories |
-| `man` |	Displays manual page of other commands |
-| `touch` |	Creates empty files |
-| `chmod` |	Changes file permissions |
-| `./` |	Runs an executable |
-| `exit` |	Exits the current shell session |
-| `sudo` |	Executes commands as superuser |
-| `shutdown` |	Shutdowns your machine |
-| `htop` |	Displays processes and resources information |
-| `unzip` |	Extracts compressed ZIP files |
-| `apt, yum, pacman` |	Package managers |
-| `echo` |	Displays lines of text |
-| `cat` |	Prints file contents |
-| `ps` |	Reports shell processes status |
-| `kill` |	Terminates programs |
-| `ping` |	Tests network connectivity |
-| `vi, vim, nano ` |	Efficient text editing |
-| `history` |	Shows a list of previous commands |
-| `passwd` |	Changes user password |
-| `which` |	Returns the full binary path of a program |
-| `shred` |	Overwrites a file to hide its contents |
-| `less` |	Inspects files interactively |
-| `tail` |	Displays last lines of a file |
-| `head` |	Displays first lines of a file |
-| `grep` |	Prints lines that match patterns |
-| `whoami` |	Outputs username |
-| `whatis` |	Shows single-line descriptions |
-| `wc` |	Word count files |
-| `uname` |	Displays OS information |
-| `neofetch` |	Displays OS and hardware information |
-| `find` |	Searches for files that follow a pattern |
-| `wget` |	Retrieves files from the internet |
-
-
 # Common Linux Commands
 
 This document provides a list of common Linux commands along with brief descriptions.
@@ -69,6 +22,7 @@ This document provides a list of common Linux commands along with brief descript
 | `tail`  | Display the last lines of a file.     |
 | `find`  | Search for files in a directory hierarchy. |
 | `locate`| Find files by name.                   |
+| `./`    |	Runs an executable.                   |
 
 ## File Permissions and Ownership
 
@@ -92,6 +46,8 @@ This document provides a list of common Linux commands along with brief descript
 | `who`     | Show who is logged on.                          |
 | `whoami`  | Print the current user name.                    |
 | `hostname`| Show or set the system’s hostname.              |
+| `kill`    |	Terminates programs.                            |
+| `htop`    |	Displays processes and resources information.   |
 
 ## Networking
 
@@ -117,6 +73,7 @@ This document provides a list of common Linux commands along with brief descript
 | `sort`  | Sort lines of text files.                         |
 | `uniq`  | Report or omit repeated lines.                    |
 | `wc`    | Print newline, word, and byte counts for each file.|
+| `shred` |	Overwrites a file to hide its contents            |
 
 ## Compression and Archiving
 
@@ -161,10 +118,13 @@ This document provides a list of common Linux commands along with brief descript
 
 | Command  | Description                                      |
 |----------|--------------------------------------------------|
+| `man`    |	Displays manual page of other commands          |
+| `which`  |	Returns the full binary path of a program       |
 | `echo`   | Display a line of text.                          |
 | `date`   | Display or set the system date and time.         |
 | `cal`    | Display a calendar.                              |
 | `alias`  | Define or display aliases.                       |
 | `history`| Display or manipulate the history list.          |
 | `shutdown`| Bring the system down.                          |
+
 

@@ -10,9 +10,7 @@
 
 Start a local Docker registry container:
 
-    ```
     docker run -d -p 5000:5000 --name registry registry:latest
-    ```
 
 2. **Tag Your Docker Image**
 

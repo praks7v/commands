@@ -10,7 +10,7 @@
 
 Start a local Docker registry container:
 
-    ```sh
+    ```
     docker run -d -p 5000:5000 --name registry registry:latest
     ```
 

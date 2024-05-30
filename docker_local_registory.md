@@ -75,6 +75,20 @@ Example:
 
     docker pull localhost:5000/my-app:latest
 
+ 6. **Push the Image form Jenkins** (optional)
+ 
+ When you are pushing image from jenkins pipeline you need to give the access to docker demon.
+ 
+   ```
+   sudo usermod -aG docker jenkins
+   ```
+   Then restart both jenkins and docker
+   
+   ``` 
+   sudo systemctl restart jenkins
+   
+   sudo systemctl restart docker
+   ```
 
 ## Full Example
 

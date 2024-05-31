@@ -23,12 +23,12 @@ docker run -d --name jenkins -p 8080:8080 -p 50000:50000 -v jenkins_data:/var/je
 ```
 Here's a breakdown of the command:
 
-`-d`: Run the container in detached mode.
-`--name jenkins`: Name the container jenkins.
-`-p 8080:8080`: Map port 8080 on the host to port 8080 on the container (the Jenkins web interface).
-`-p 50000:50000`: Map port 50000 on the host to port 50000 on the container (used for Jenkins agent communication).
-`-v jenkins_data:/var/jenkins_home`: Mount the Docker volume jenkins_data to the Jenkins home directory inside the container, ensuring data persistence.
-`jenkins/jenkins:lts-jdk17`: Specify the Jenkins Docker image to use.
+- `-d`: Run the container in detached mode.
+- `--name jenkins`: Name the container jenkins.
+- `-p 8080:8080`: Map port 8080 on the host to port 8080 on the container (the Jenkins web interface).
+- `-p 50000:50000`: Map port 50000 on the host to port 50000 on the container (used for Jenkins agent communication).
+- `-v jenkins_data:/var/jenkins_home`: Mount the Docker volume jenkins_data to the Jenkins home directory inside the container, ensuring data persistence.
+- `jenkins/jenkins:lts-jdk17`: Specify the Jenkins Docker image to use.
 
 - **Step 4: Access Jenkins**
 After the container is running, you can access Jenkins by navigating to `http://<your-docker-host-ip>:8080` in your web browser. If you're running Docker on your local machine, you can use http://localhost:8080.

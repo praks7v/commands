@@ -9,3 +9,4 @@
 -  [Minikube Registry](minikube/minikube_docker_registry.md).
 -  [Terraform Commands](TERRAFORM.md).
 -  [Helm Commands](HELM.md).
+-  [Argocd Installation](argocd/argocd.md).

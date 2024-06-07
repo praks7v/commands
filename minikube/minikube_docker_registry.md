@@ -48,6 +48,10 @@ docker push localhost:5000/my-image
 ```
 docker pull localhost:5000/my-image
 ```
+8. **Exit Minikube Docker Environment**
+```
+eval $(minikube docker-env -u)
+```
 
 **Use the Image in Kubernetes:**
    You can now use your image in your Kubernetes manifests. Reference it as `localhost:5000/my-image`.

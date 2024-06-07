@@ -95,6 +95,7 @@ Apply the Ingress resource:
 kubectl apply -f echoserver-ingress.yaml
 ```
 **Step 5: Update /etc/hosts**
+
 Since Minikube runs on a local machine, you'll need to update your `/etc/hosts` file to route traffic from `echoserver.local` to the Minikube IP address.
 
 First, get the Minikube IP:
@@ -102,12 +103,10 @@ First, get the Minikube IP:
 ```
 minikube ip
 ```
-Suppose the IP is `127.0.0.1`. Add the following line to your `/etc/hosts` file (or `C:\Windows\System32\drivers\etc\hosts on Windows`):
+Suppose the IP is `127.0.0.1`. Add the following line to your `/etc/hosts` file:
+
 ```
-sudo nano /etc/hosts/
-```
-```
-192.168.49.2 echoserver.local
+127.0.0.1 echoserver.local
 ```
 **Step 6: Access Your Application**
 

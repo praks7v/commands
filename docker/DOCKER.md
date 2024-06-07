@@ -72,17 +72,17 @@ The base command for the [Docker](https://docs.docker.com/reference/cli/docker/)
 
 | Command                              | Description                                       |
 |--------------------------------------|---------------------------------------------------|
-| `docker-compose up`                  | Build, (re)create, start, and attach to containers for a service. |
-| `docker-compose down`                | Stop and remove containers, networks, images, and volumes. |
-| `docker-compose build`               | Build or rebuild services.                        |
-| `docker-compose start`               | Start existing containers.                        |
-| `docker-compose stop`                | Stop running containers without removing them.    |
-| `docker-compose restart`             | Restart running containers.                       |
-| `docker-compose ps`                  | List containers.                                  |
-| `docker-compose logs`                | View output from containers.                      |
-| `docker-compose exec`                | Execute a command in a running container.         |
-| `docker-compose run`                 | Run a one-off command on a service.               |
-| `docker-compose pull`                | Pull service images.                              |
-| `docker-compose config`              | Validate and view the Compose file.               |
+| `docker compose up`                  | Build, (re)create, start, and attach to containers for a service. |
+| `docker compose down`                | Stop and remove containers, networks, images, and volumes. |
+| `docker compose build`               | Build or rebuild services.                        |
+| `docker compose start`               | Start existing containers.                        |
+| `docker compose stop`                | Stop running containers without removing them.    |
+| `docker compose restart`             | Restart running containers.                       |
+| `docker compose ps`                  | List containers.                                  |
+| `docker compose logs`                | View output from containers.                      |
+| `docker compose exec`                | Execute a command in a running container.         |
+| `docker compose run`                 | Run a one-off command on a service.               |
+| `docker compose pull`                | Pull service images.                              |
+| `docker compose config`              | Validate and view the Compose file.               |
 
 These commands form the basic toolkit for managing Docker containers, images, networks, volumes, and system-wide information.

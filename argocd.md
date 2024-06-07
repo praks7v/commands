@@ -10,27 +10,28 @@ Argo CD is a declarative, GitOps continuous delivery tool for Kubernetes. It use
 **Step-by-Step Guide**
 1. **Install Argo CD**
    
-   First, create a namespace for Argo CD:
+First, create a namespace for Argo CD:
 
 ```
 kubectl create namespace argocd
 ```
-   Then, install Argo CD using the following command:
+Then, install Argo CD using the following command:
 
 ```
 kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
 ```
 2. **Access the Argo CD API Server**
+   
    By default, the Argo CD API server is not exposed with an external IP. You can access it using kubectl port-forward:
 
 ```
 kubectl port-forward svc/argocd-server -n argocd 8080:443
 ```
-   Now, you can access the Argo CD web UI by navigating to https://localhost:8080 in your browser.
+Now, you can access the Argo CD web UI by navigating to https://localhost:8080 in your browser.
 
 3. **Login to Argo CD**
    
-   Get the initial admin password:
+Get the initial admin password:
 
 ```
 kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
@@ -41,7 +42,7 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
    
    To deploy an application, you need a Git repository with Kubernetes manifests or Helm charts. Here's an example using a simple Git repository.
 
-   Create a file named application.yaml with the following content:
+Create a file named application.yaml with the following content:
 
 ```yaml
 apiVersion: argoproj.io/v1alpha1
@@ -63,7 +64,7 @@ spec:
       prune: true
       selfHeal: true
 ```
-   Apply the application manifest:
+Apply the application manifest:
 
 ```
 kubectl apply -f application.yaml
@@ -76,11 +77,11 @@ kubectl apply -f application.yaml
    
    Install the Argo CD CLI by following the instructions on the Argo CD CLI installation page.
 
-   Once installed, log in to Argo CD using the CLI:
+Once installed, log in to Argo CD using the CLI:
 ```
 argocd login localhost:8080
 ```
-   Deploy an application using the CLI:
+Deploy an application using the CLI:
 ```
 argocd app create my-app \
     --repo https://github.com/your-repo/your-app.git \
@@ -88,7 +89,7 @@ argocd app create my-app \
     --dest-server https://kubernetes.default.svc \
     --dest-namespace default
 ```
-   Synchronize the application:
+Synchronize the application:
 
 ```
 argocd app sync my-app

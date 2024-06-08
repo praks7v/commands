@@ -96,6 +96,12 @@ kubectl apply -f echoserver-ingress.yaml
 ```
 **Step 5: Update /etc/hosts**
 
+- **Option: 01**
+Add an entry to your /etc/hosts file to map django.local to the Minikube IP:
+```
+echo "$(minikube ip) django.local" | sudo tee -a /etc/hosts
+```
+ - **Option: 02**
 Since Minikube runs on a local machine, you'll need to update your `/etc/hosts` file to route traffic from `echoserver.local` to the Minikube IP address.
 
 First, get the Minikube IP:

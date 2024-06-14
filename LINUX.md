@@ -72,8 +72,8 @@ second link for [linux commands](https://linuxcommand.org/lc3_man_page_index.php
 **Examples:**
 | Command                               | Description                                             |
 |---------------------------------------|---------------------------------------------------------|
-| `lsof -i: 5432`                         | Show the running port                                   |
-| ```netstat -ano | grep 5432```          | 5432 - Port Number                                      |
+| `lsof -i: 5432`                       | Show the running port                                   |
+| `netstat -ano \| grep 5432`           | 5432 - Port Number                                      |
 
 ## Text Processing
 

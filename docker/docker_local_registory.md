@@ -35,14 +35,33 @@ Push the tagged image to your local registry:
     
     docker push localhost:5000/<desired-image-name>:<tag>
 
-
+    
 Example:
 
     
     docker push localhost:5000/my-app:latest
 
 
-4. **Verify the Image in the Local Registry**
+4. **Configure Docker to Use HTTP for Your Registry (Optional):**
+   
+   Docker uses HTTPS by default for security reasons. To push to an HTTP registry, you need to explicitly tell Docker to allow insecure registries.
+  
+  Open the Docker daemon configuration file in a text editor:
+
+```
+sudo nano /etc/docker/daemon.json
+```
+Add the insecure-registries entry:
+
+```
+{
+  "insecure-registries": ["localhost:5000"]
+}
+```
+Save the file and exit the editor.
+
+
+5. **Verify the Image in the Local Registry**
 
 You can verify that the image is successfully pushed by listing the images in the registry:
 
@@ -62,7 +81,7 @@ Example:
     curl -X GET http://localhost:5000/v2/my-app/tags/list
 
 
-5. **Pull the Image from the Local Registry**
+6. **Pull the Image from the Local Registry**
 
 To pull the image from your local registry to another machine (or the same machine), use the following command:
 
@@ -75,7 +94,7 @@ Example:
 
     docker pull localhost:5000/my-app:latest
 
- 6. **Push the Image from Jenkins to Docker Local Registry** (optional)
+ 7. **Push the Image from Jenkins to Docker Local Registry** (optional)
  
  When you are pushing an image from the Jenkins pipeline you need to give access to docker demon.
  
